@@ -90,7 +90,22 @@
                 </select>
               </div>
 
-              <!-- Select Dinámico para los Recintos (Requisito del Ingeniero) -->
+              <!-- ______________________________________________ -->
+
+              <!-- Modalidad de Ingreso -->
+              <div class="mb-3">
+                <label class="form-label">Modalidad de Ingreso</label>
+                <select class="form-select" v-model="formulario.modalidadIngreso" required>
+                  <option value="" disabled>Seleccione una modalidad</option>
+                  <option value="Entrada Pagada">Entrada Pagada</option>
+                  <option value="Entrada Gratuita">Entrada Gratuita</option>
+                  <option value="Pase Invitación">Pase Invitación</option>
+                </select>
+              </div>
+
+              <!-- ______________________________________________ -->
+
+              <!-- Select Recintos  -->
               <div class="mb-3">
                 <label class="form-label">Recinto</label>
                 <select class="form-select" v-model="formulario.idRecinto" required>

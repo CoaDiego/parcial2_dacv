@@ -27,6 +27,13 @@ export class EventosCulturale {
   @Column('varchar', { length: 20 })
   estado: string;
 
+  // _________________________________________________
+
+  @Column('varchar', { length: 30, name: 'modalidad_ingreso', default: 'Entrada Pagada' })
+  modalidadIngreso: string;
+
+  // _________________________________________________
+
   @CreateDateColumn({ name: 'fecha_creacion' })
   fechaCreacion: Date;
 

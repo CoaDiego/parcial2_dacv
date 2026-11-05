@@ -42,4 +42,14 @@ export class CreateEventosCulturaleDto {
   @IsString({ message: 'El estado debe ser texto' })
   @MaxLength(20, { message: 'El estado no puede tener más de 20 caracteres' })
   readonly estado: string;
+
+  // _________________________________________________
+
+  @ApiProperty()
+  @IsNotEmpty({ message: 'La modalidad de ingreso es obligatoria' })
+  @IsString({ message: 'La modalidad debe ser texto' })
+  readonly modalidadIngreso: string;
+
+  // _________________________________________________
+  
 }
